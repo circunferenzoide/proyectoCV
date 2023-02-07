@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6588/6588143.png">
+  <script src="./scripts/scriptsContacto.js" async></script>
+  <script src="./scripts/scriptsNav.js" async></script>
+</head>
+
+<body>
+  <nav id="menu">
+    <ul class="nav glassmorphism">
+      <li>
+        <i class="fa-solid fa-user " onclick="location.href='index.html#perfil-personal'"></i>
+        <a href="index.html#perfil-personal">PERFIL PROFESIONAL</a>
+      </li>
+      <li>
+        <i class="fa-regular fa-address-card " onclick="location.href='index.html#info-personal'"></i>
+        <a href="index.html#info-personal">DATOS PERSONALES</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-graduation-cap " onclick="location.href='index.html#estudios'"></i>
+        <a href="index.html#estudios">ESTUDIOS</a>
+      </li>
+      <li>
+        <i class="fas fa-cogs " onclick="location.href='index.html#habilidades'"></i>
+        <a href="index.html#habilidades">HABILIDADES</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-briefcase " onclick="location.href='index.html#experiencia'"></i>
+        <a href="index.html#experiencia">EXPERIENCIA LABORAL</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-envelope " onclick="location.href='./contacto.html'"></i>
+        <a href="./contacto.html">CONTACTO</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="contacto">
+    <div class="glassmorphism contacto-interior">
+      <h1 class="titulo-seccion espaciado-perfil">FORMULARIO DE CONTACTO</h1>
+      <hr class="divisor-contacto">
+
+      <form id="formContacto" name="formContacto" class="formulario-contacto">
+        <div class="input-formulario">
+          <label for="inputNombre" class="obligatorio">Ingrese su nombre:</label>
+          <input type="text" id="inputNombre" name="nombre" required>
+        </div>
+        <div class="input-formulario">
+          <label for="inputTelefono" class="obligatorio">Ingrese su teléfono:</label>
+          <input type="tel" id="inputTelefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div class="input-formulario">
+          <label for="inputEmail" class="obligatorio">Ingrese su e-mail:</label>
+          <input type="email" id="inputEmail" name="email" required>
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Deje su mensaje aquí:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" cols="75"></textarea>
+        </div>
+
+        <div class="input-formulario botones">
+          <button type="reset" name="boton-reset" class="btn-contacto">Cancelar</button>
+          <button type="submit" name="boton-submit" class="btn-contacto">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Milagros Giudice</p>
+  </div>
+
+  <div id="alerta-exito">
+    <button class="btn-alerta" onclick="cerrarAlerta()">X</button>
+    <div class="contenido-alerta">
+      <i class="fa-regular fa-circle-check icono-contacto"></i>
+      <h3>Formulario Enviado con Éxito!</h3>
+    </div>
+  </div>
+</body>

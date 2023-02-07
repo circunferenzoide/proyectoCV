@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV PERSONAL</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6588/6588143.png">
+    <script src="./scripts/scriptsIndex.js" async></script>
+    <script src="./scripts/scriptsNav.js" async></script>
+</head>
+
+<body>
+    <nav id="menu">
+        <ul class="nav glassmorphism">
+            <li>
+                <i class="fa-solid fa-user " onclick="location.href='#perfil-personal'"></i>
+                <a href="#perfil-personal">PERFIL PROFESIONAL</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-address-card " onclick="location.href='#info-personal'"></i>
+                <a href="#info-personal">DATOS PERSONALES</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-graduation-cap " onclick="location.href='#estudios'"></i>
+                <a href="#estudios">ESTUDIOS</a>
+            </li>
+            <li>
+                <i class="fas fa-cogs " onclick="location.href='#habilidades'"></i>
+                <a href="#habilidades">HABILIDADES</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-briefcase " onclick="location.href='#experiencia'"></i>
+                <a href="#experiencia">EXPERIENCIA LABORAL</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope " onclick="location.href='./contacto.html'"></i>
+                <a href="./contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="perfil-personal" class="fondo">
+        <img src="" alt="foto-de-perfil-cv" id="foto-perfil">
+        <div class="contenido-perfil glassmorphism">
+            <h1 class="espaciado titulo-seccion">HOLA! SOY <span class="nombreApellido"></span></h1>
+            <h3 class="espaciado subtitulo-seccion" id="profesion"></h3>
+            <p class="desc-perfil">
+                Tengo una gran trayectoria en el desarrollo de sistemas de gestión web y sistemas de e-commerce.
+                <br>
+                Me oriento a los resultados, busco lograr el objetivo de obtener una placentera experiencia de usuario
+                utilizando buen diseño de páginas web, incluyendo fácil usabilidad, reactividad y rápido comportamiento,
+                y además, simpleza de manejo.
+                <br>
+                Me gustaría incorporar mis conocimientos y capacidades creativas en nuevos niveles para formar nuevas
+                experiencias.
+                <br>
+                Si te interesa conocerme seguí recorriendo!
+            </p>
+        </div>
+    </section>
+
+    <section id="info-personal" class="fondo">
+        <div class="glassmorphism black contenido-datos">
+            <h1 class="titulo-seccion espaciado color-gradiente">DATOS PERSONALES</h1>
+            <div class="listado-datos">
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-address-card sombra-lila"></i>
+                        Nombre: <span class="nombreApellido"></span>.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user-clock sombra-lila"></i>
+                        Edad: <span id="edad"></span>.
+                    </li>
+                    <li>
+                        <i class="fa fa-solid fa-passport sombra-lila"></i>
+                        Nacionalidad: <span id="nacionalidad"></span>.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-at sombra-lila"></i>
+                        Email: <span id="email"></span>.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone sombra-lila"></i>
+                        Teléfono: <span id="cel"></span>.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-house sombra-lila"></i>
+                        Direccion: <span id="direccion"></span>.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-map-location sombra-lila"></i>
+                        Ubicacion: <span id="pais"></span>.
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="estudios" class="fondo">
+        <div class="contenido-estudios">
+            <h1 class="titulo-seccion espaciado color-gradiente">ESTUDIOS</h1>
+            <div class="listado-estudios">
+                <ul>
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Nivel Primario</h3>
+                    </li>
+                    <ul class="listado-estudios-interior">
+                        <li>Colegio Santa María</li>
+                        <li class="años primario"></li>
+                    </ul>
+
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Nivel Secundario</h3>
+                    </li>
+                    <ul class="listado-estudios-interior">
+                        <li>Bachillerato de Ciencias de <span class="ciudad"></span></li>
+                        <li class="años secundario"></li>
+                    </ul>
+
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Nivel Universitario</h3>
+                    </li>
+                    <ul class="listado-estudios-interior">
+                        <li>Ingeniería en Sistemas de Información</li>
+                        <li>Universidad de <span class="ciudad"></span></li>
+                        <li><span class="años universitario"></span></li>
+                    </ul>
+
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Masters</h3>
+                    </li>
+                    <ul class="listado-estudios-interior">
+                        <li>Master en Ingeniería Web</li>
+                        <li>Universidad de <span class="ciudad"></span></li>
+                        <li><span class="años masters"></span></li>
+                    </ul>
+
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Cursos y Certificaciones</h3>
+                    </li>
+                    <ul class="listado-estudios-interior">
+                        <li>Programación avanzada en HTML (100 horas) - Udemy</li>
+                        <li>Programación avanzada en CSS (200 horas) - Udemy</li>
+                        <li>Programación avanzada en JavaScript (200 horas) - Udemy</li>
+                        <li>Desarrollo con Python (200 horas) - IAcademy</li>
+                        <li>Adobe Illustrator para diseño gráfico (140 horas) - Domestika</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="fondo">
+        <h1 class="titulo-seccion color-gradiente espaciado-habilidades">HABILIDADES</h1>
+        <div class="contenedor-habilidades">
+            <table class="contenido-habilidades glassmorphism"> 
+                <thead>
+                    <th class="subtitulo-seccion color-gradiente" colspan="4">PROFESIONALES</th>
+                </thead>
+                <tbody>
+                    <thead>
+                        <th colspan="2">LENGUAJES DE PROGRAMACION</th>
+                        <th colspan="2">SOFTWARE Y APLICACIONES</th>
+                    </thead>
+                    <tbody class="contenido-habilidades-interior">
+                        <tr>
+                            <td>HTML</td>
+                            <td>&#11088; &#11088; &#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Visual Studio</td>
+                            <td>&#11088; &#11088; &#11088; &#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>&#11088; &#11088; &#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Word</td>
+                            <td>&#11088; &#11088; &#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>&#11088; &#11088; &#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Enterprise Architect</td>
+                            <td>&#11088; &#11088; &#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>React</td>
+                            <td>&#11088; &#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Excel</td>
+                            <td>&#11088; &#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>MongoDB</td>
+                            <td>&#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Parse Server</td>
+                            <td>&#11088; &#11088; &#11088;</td> 
+                        </tr>
+                        <tr>
+                            <td>NodeJs</td>
+                            <td>&#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">Ganache</td>
+                            <td>&#11088; &#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>&#11088; &#11088; &#11088;</td>
+                            <td class="division-tabla">MySQL Server</td>
+                            <td>&#11088; &#11088;</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>&#11088; &#11088;</td>
+                            <td class="division-tabla">Truffle</td>
+                            <td>&#11088; &#11088;</td>
+                        </tr>
+                    </tbody>
+                </tbody>
+            </table>
+
+            <table class="contenido-habilidades glassmorphism">
+                <thead>
+                    <th class="subtitulo-seccion color-gradiente" colspan="4">PERSONALES</th>
+                </thead>
+                <tbody class="contenido-habilidades-interior centrado">
+                    <tr>
+                        <td colspan="2">Español Nativo</td>
+                        <td colspan="2" class="division-tabla">Ingles Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Alemán Inicial</td>
+                        <td colspan="2" class="division-tabla" >Portugués Inicial</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Proactividad</td>
+                        <td colspan="2" class="division-tabla">Trabajo en Equipo</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Puntualidad</td>
+                        <td colspan="2" class="division-tabla">Responsabilidad</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Adaptabilidad</td>
+                        <td colspan="2" class="division-tabla">Capacidad Analítica</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="experiencia" class="fondo">
+        <div class="contenido-experiencia">
+            <h1 class="titulo-seccion espaciado color-gradiente" style="align-self: center">EXPERIENCIA</h1>
+            <div class="listado-experiencia">
+                <ul>
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Desarrollador Web eCommerce - Hays Response</h3>
+                        <p><i class="fa-solid fa-calendar-days sombra-lila"></i> Junio de 2020 - Actualidad</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Desarrollador Web React Sr - CarminTech</h3>
+                        <p><i class="fa-solid fa-calendar-days sombra-lila"></i> Junio de 2019 - Marzo de 2020</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Programador Sr - Ulrich Tech</h3>
+                        <p><i class="fa-solid fa-calendar-days sombra-lila"></i> Mayo 2018 - Diciembe 2018</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitulo-seccion color-gradiente">Programador Jr - Silos Corp</h3>
+                        <p><i class="fa-solid fa-calendar-days sombra-lila"></i> Enero 2015 - Abril 2018</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Milagros Giudice</p>
+    </section>
+</body>
+</html>
